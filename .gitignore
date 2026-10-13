@@ -1,15 +1,33 @@
+# ========================================================
+# 1. Thư mục biên dịch và cache (Chặn ở TẤT CẢ các thư mục UI1, UI2...)
+# ========================================================
+build/
+**/build/
+.gradle/
+**/.gradle/
+
+# ========================================================
+# 2. Cấu hình Android Studio / IntelliJ (Chặn triệt để toàn bộ thư mục .idea)
+# ========================================================
+.idea/
+**/.idea/
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+**/*.iml
+
+# ========================================================
+# 3. File chứa đường dẫn SDK máy tính cá nhân (Bảo mật, không đẩy lên mạng)
+# ========================================================
 local.properties
+**/local.properties
+
+# ========================================================
+# 4. File tạm của hệ điều hành và file log/captures
+# ========================================================
+.DS_Store
+Thumbs.db
+captures/
+**/captures/
+.externalNativeBuild/
+**/.externalNativeBuild/
+.cxx/
+**/.cxx/
